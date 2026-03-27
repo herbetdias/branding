@@ -2,6 +2,12 @@
 
 Plugin para GLPI 10/11 que permite personalizar a identidade visual do GLPI, incluindo logos, titulo, favicon e estilos de interface.
 
+<img width="2534" height="474" alt="image" src="https://github.com/user-attachments/assets/bf3c5868-30e6-48a9-ba56-fca3b73fb791" />
+<img width="2539" height="449" alt="image" src="https://github.com/user-attachments/assets/6aa2ef9d-f1bd-48aa-b138-a3343ad4a359" />
+<img width="2546" height="778" alt="image" src="https://github.com/user-attachments/assets/8ac2b3b1-093d-4dc1-8187-e4d5fe87d8ba" />
+<img width="2533" height="434" alt="image" src="https://github.com/user-attachments/assets/ac749204-d879-4431-9a60-fa56e27026a1" />
+
+
 ## Funcionalidades
 
 - **Logo personalizado** para o header e pagina de login
