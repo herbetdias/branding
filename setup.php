@@ -11,22 +11,26 @@ function plugin_init_branding() {
 
     $PLUGIN_HOOKS['csrf_compliant']['branding'] = true;
 
+    // Cache-busting: read version stamp
+    $ver_file = Plugin::getPhpDir('branding') . '/public/version.txt';
+    $v = file_exists($ver_file) ? trim(file_get_contents($ver_file)) : PLUGIN_BRANDING_VERSION;
+
     // CSS for authenticated pages
     $PLUGIN_HOOKS[Hooks::ADD_CSS]['branding'] = [
-        'css/branding.css',
+        'css/branding.css?v=' . $v,
     ];
 
     // CSS for login/anonymous pages
     $PLUGIN_HOOKS[Hooks::ADD_CSS_ANONYMOUS_PAGE]['branding'] = [
-        'css/branding_login.css',
+        'css/branding_login.css?v=' . $v,
     ];
 
     // Minimal JS only for favicon (CSS handles everything else)
     $PLUGIN_HOOKS[Hooks::ADD_JAVASCRIPT]['branding'] = [
-        'js/branding.js',
+        'js/branding.js?v=' . $v,
     ];
     $PLUGIN_HOOKS[Hooks::ADD_JAVASCRIPT_ANONYMOUS_PAGE]['branding'] = [
-        'js/branding_login.js',
+        'js/branding_login.js?v=' . $v,
     ];
 
     // Config page

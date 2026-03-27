@@ -1,8 +1,6 @@
 /* Branding plugin – login – auto-generated */
 html:root{  --tblr-primary:#fec95c;--tblr-primary-rgb:254, 201, 92;
-  --glpi-logo-dark-login:url('/plugins/branding/uploads/logo_login_69c5af78e2352.png');--glpi-logo-light-login:url('/plugins/branding/uploads/logo_login_69c5af78e2352.png');
 }
-body,.page-body,.login-page,#page{background-image:url('/plugins/branding/uploads/login_background_69c5b34136a9a.png')!important;background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important;background-attachment:fixed!important}
 
 /* ══ MODERN LOGIN ══ */
 html:root{--tblr-border-radius:16px;--tblr-border-radius-sm:10px;--tblr-border-radius-lg:20px;--tblr-body-bg:#f5f7fb}

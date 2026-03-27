@@ -1,11 +1,7 @@
 /* Branding plugin – auto-generated */
 html:root{  --tblr-primary:#fec95c;--tblr-primary-rgb:254, 201, 92;
   --glpi-mainmenu-bg:#1a202c;
-  --glpi-logo:url('/plugins/branding/uploads/logo_sidebar_69c5af9810435.png');--glpi-logo-light:url('/plugins/branding/uploads/logo_sidebar_69c5af9810435.png');--glpi-logo-dark:url('/plugins/branding/uploads/logo_sidebar_69c5af9810435.png');
-  --glpi-logo-reduced:url('/plugins/branding/uploads/logo_sidebar_collapsed_69c5af78e617e.png');--glpi-logo-light-reduced:url('/plugins/branding/uploads/logo_sidebar_collapsed_69c5af78e617e.png');--glpi-logo-dark-reduced:url('/plugins/branding/uploads/logo_sidebar_collapsed_69c5af78e617e.png');
 }
-.page .glpi-logo{background:url('/plugins/branding/uploads/logo_sidebar_69c5af9810435.png') no-repeat!important;background-size:contain!important}
-body.navbar-collapsed .navbar-brand .glpi-logo{background:url('/plugins/branding/uploads/logo_sidebar_collapsed_69c5af78e617e.png') no-repeat!important;background-size:contain!important}
 
 /* ══ MODERN UI ══ */
 /* ── Tabler variable overrides ── */

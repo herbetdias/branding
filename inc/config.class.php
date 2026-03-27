@@ -675,10 +675,16 @@ html body .page-anonymous .form-control:focus{background:rgba(255,255,255,.85);b
             }
         }
 
+        // Cache-busting version stamp
+        $json['_v'] = time();
+
         file_put_contents($public_dir . '/config.json', json_encode($json));
 
+        // Write version file for CSS/JS cache-busting
+        file_put_contents($public_dir . '/version.txt', (string)$json['_v']);
+
         // ── Authenticated pages CSS ─────────────────────────────────
-        $css  = "/* Branding plugin – auto-generated */\n";
+        $css  = "/* Branding plugin – auto-generated – v{$json['_v']} */\n";
         $vars = '';
 
         if (!empty($json['primary_color'])) {
@@ -720,7 +726,7 @@ html body .page-anonymous .form-control:focus{background:rgba(255,255,255,.85);b
         file_put_contents($public_dir . '/css/branding.css', $css);
 
         // ── Login page CSS ──────────────────────────────────────────
-        $lcss  = "/* Branding plugin – login – auto-generated */\n";
+        $lcss  = "/* Branding plugin – login – auto-generated – v{$json['_v']} */\n";
         $lvars = '';
 
         if (!empty($json['primary_color'])) {
