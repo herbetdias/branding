@@ -1,0 +1,19 @@
+/* Branding plugin – login – auto-generated */
+html:root{  --tblr-primary:#fec95c;--tblr-primary-rgb:254, 201, 92;
+  --glpi-logo-dark-login:url('/plugins/branding/uploads/logo_login_69c5af78e2352.png');--glpi-logo-light-login:url('/plugins/branding/uploads/logo_login_69c5af78e2352.png');
+}
+body,.page-body,.login-page,#page{background-image:url('/plugins/branding/uploads/login_background_69c5b34136a9a.png')!important;background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important;background-attachment:fixed!important}
+
+/* ══ MODERN LOGIN ══ */
+html:root{--tblr-border-radius:16px;--tblr-border-radius-sm:10px;--tblr-border-radius-lg:20px;--tblr-body-bg:#f5f7fb}
+html body.page-anonymous,html body .page-anonymous{background:#f5f7fb}
+html body .page-anonymous .card.main-content-card{border-radius:24px;box-shadow:0 24px 80px rgba(0,0,0,.08);border:1px solid rgba(255,255,255,.6);backdrop-filter:blur(10px);overflow:hidden}
+html body .page-anonymous .card-header{border-bottom:0;padding:2rem 2rem 0}
+html body .page-anonymous .card-body{padding:1.5rem 2rem 2rem}
+html body .page-anonymous .btn{border-radius:12px;font-weight:600;transition:all .2s;padding:.6rem 1.5rem}
+html body .page-anonymous .btn-primary{box-shadow:0 4px 16px rgba(var(--tblr-primary-rgb),.3)}
+html body .page-anonymous .btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.15)}
+html body .page-anonymous .form-control{border-radius:12px;border:1.5px solid #e2e8f0;padding:.65rem 1rem;font-size:.9rem}
+html body .page-anonymous .form-control:focus{border-color:var(--tblr-primary);box-shadow:0 0 0 4px rgba(var(--tblr-primary-rgb),.1)}
+html body .page-anonymous .form-select{border-radius:12px}
+

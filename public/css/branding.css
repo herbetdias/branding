@@ -1,0 +1,123 @@
+/* Branding plugin – auto-generated */
+html:root{  --tblr-primary:#fec95c;--tblr-primary-rgb:254, 201, 92;
+  --glpi-mainmenu-bg:#1a202c;
+  --glpi-logo:url('/plugins/branding/uploads/logo_sidebar_69c5af9810435.png');--glpi-logo-light:url('/plugins/branding/uploads/logo_sidebar_69c5af9810435.png');--glpi-logo-dark:url('/plugins/branding/uploads/logo_sidebar_69c5af9810435.png');
+  --glpi-logo-reduced:url('/plugins/branding/uploads/logo_sidebar_collapsed_69c5af78e617e.png');--glpi-logo-light-reduced:url('/plugins/branding/uploads/logo_sidebar_collapsed_69c5af78e617e.png');--glpi-logo-dark-reduced:url('/plugins/branding/uploads/logo_sidebar_collapsed_69c5af78e617e.png');
+}
+.page .glpi-logo{background:url('/plugins/branding/uploads/logo_sidebar_69c5af9810435.png') no-repeat!important;background-size:contain!important}
+body.navbar-collapsed .navbar-brand .glpi-logo{background:url('/plugins/branding/uploads/logo_sidebar_collapsed_69c5af78e617e.png') no-repeat!important;background-size:contain!important}
+
+/* ══ MODERN UI ══ */
+/* ── Tabler variable overrides ── */
+html:root{
+  --tblr-border-radius:16px;
+  --tblr-border-radius-sm:10px;
+  --tblr-border-radius-lg:20px;
+  --tblr-border-radius-xl:1.5rem;
+  --tblr-border-radius-xxl:2rem;
+  --tblr-border-radius-pill:100rem;
+  --tblr-box-shadow:0 2px 8px rgba(0,0,0,.06);
+  --tblr-box-shadow-sm:0 1px 4px rgba(0,0,0,.04);
+  --tblr-box-shadow-lg:0 12px 40px rgba(0,0,0,.1);
+  --tblr-border-color:rgba(0,0,0,.07);
+  --tblr-border-color-translucent:rgba(0,0,0,.05);
+  --tblr-shadow-input:0 1px 2px rgba(0,0,0,.04);
+  --tblr-body-bg:#f5f7fb;
+}
+
+/* ── Page background ── */
+html body .page-wrapper,html body .page-body{background:#f5f7fb}
+html body .page-body::before{content:"";position:fixed;top:0;left:0;right:0;height:300px;background:linear-gradient(135deg,rgba(var(--tblr-primary-rgb),.06) 0%,rgba(var(--tblr-primary-rgb),.02) 40%,transparent 70%);pointer-events:none;z-index:0}
+
+/* ── Cards: elevated, big radius ── */
+html body .card{border-radius:16px;border:1px solid rgba(0,0,0,.06);box-shadow:0 2px 8px rgba(0,0,0,.05);transition:all .25s ease;position:relative;overflow:hidden}
+html body .card:hover{box-shadow:0 8px 24px rgba(0,0,0,.08);transform:translateY(-1px)}
+html body .card .card-header{border-radius:16px 16px 0 0;background:transparent;border-bottom:1px solid rgba(0,0,0,.04);padding:1rem 1.25rem}
+html body .card .card-footer{border-radius:0 0 16px 16px;border-top:1px solid rgba(0,0,0,.04)}
+html body .card .card-body{padding:1.25rem}
+
+/* ── Buttons: pill shape, glow, lift ── */
+html body .btn{border-radius:10px;font-weight:600;transition:all .2s ease;letter-spacing:.02em;text-transform:none}
+html body .btn:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.12)}
+html body .btn:active{transform:translateY(0);box-shadow:0 2px 4px rgba(0,0,0,.08)}
+html body .btn-primary{box-shadow:0 4px 12px rgba(var(--tblr-primary-rgb),.3)}
+html body .btn-primary:hover{box-shadow:0 8px 20px rgba(var(--tblr-primary-rgb),.35)}
+html body .btn-ghost-primary:hover,html body .btn-outline-primary:hover{background:rgba(var(--tblr-primary-rgb),.08)}
+html body .btn-sm{border-radius:8px;font-size:.8rem}
+html body .btn-lg{border-radius:14px}
+html body .btn-pill{border-radius:100rem}
+
+/* ── Forms: soft, glowing focus ── */
+html body .form-control,html body .form-select{border-radius:10px;border:1.5px solid #e2e8f0;transition:all .2s ease;background:#fff}
+html body .form-control:focus,html body .form-select:focus{border-color:var(--tblr-primary);box-shadow:0 0 0 4px rgba(var(--tblr-primary-rgb),.1);background:#fff}
+html body .form-control::placeholder{color:#a0aec0}
+html body .input-group{border-radius:10px;overflow:hidden}
+html body .form-check-input{border-radius:6px}
+html body .form-check-input:checked{box-shadow:0 2px 4px rgba(var(--tblr-primary-rgb),.3)}
+
+/* ── Tables: clean, stripe-hover ── */
+html body .table{border-collapse:separate;border-spacing:0}
+html body .table thead th{border-bottom:2px solid #edf2f7;font-weight:700;text-transform:uppercase;font-size:.68rem;letter-spacing:.08em;color:#8896ab;padding:.85rem 1rem;background:transparent}
+html body .table tbody tr{transition:all .15s ease}
+html body .table tbody tr:hover{background:rgba(var(--tblr-primary-rgb),.04)}
+html body .table td{padding:.75rem 1rem;border-bottom:1px solid #f1f5f9;vertical-align:middle}
+
+/* ── Dropdown: floating, rounded ── */
+html body .dropdown-menu{border-radius:14px;border:1px solid rgba(0,0,0,.06);box-shadow:0 12px 40px rgba(0,0,0,.12);padding:8px;background:#fff;animation:dropIn .15s ease}
+html body .dropdown-item{border-radius:8px;padding:.5rem .85rem;transition:all .15s;font-weight:500}
+html body .dropdown-item:hover{background:rgba(var(--tblr-primary-rgb),.06)}
+html body .dropdown-item.active,html body .dropdown-item:active{border-radius:8px}
+@keyframes dropIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+
+/* ── Sidebar: polished nav items ── */
+html body .navbar-vertical .navbar-nav .nav-link{border-radius:0 12px 12px 0;margin:1px 10px 1px 0;padding:.55rem 1rem;transition:all .2s ease;font-weight:500}
+html body .navbar-vertical .navbar-nav .nav-link:hover{background:rgba(255,255,255,.12)}
+html body .navbar-vertical .navbar-nav .nav-link.active{background:rgba(255,255,255,.18);font-weight:600}
+html body .navbar-vertical .navbar-nav .nav-link .nav-link-icon{opacity:.7;transition:opacity .2s}
+html body .navbar-vertical .navbar-nav .nav-link:hover .nav-link-icon,html body .navbar-vertical .navbar-nav .nav-link.active .nav-link-icon{opacity:1}
+
+/* ── Top header bar ── */
+html body .navbar:not(.navbar-vertical){backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+
+/* ── Modal: big radius, deep shadow ── */
+html body .modal-content{border-radius:20px;border:0;box-shadow:0 24px 80px rgba(0,0,0,.15);overflow:hidden}
+html body .modal-header{border-bottom:1px solid #f1f5f9;padding:1.25rem 1.5rem}
+html body .modal-body{padding:1.5rem}
+html body .modal-footer{border-top:1px solid #f1f5f9;padding:1rem 1.5rem}
+
+/* ── Badges: pill, softer ── */
+html body .badge{border-radius:8px;font-weight:600;letter-spacing:.02em;padding:.35em .65em}
+html body .badge-pill,.badge.rounded-pill{border-radius:100rem}
+
+/* ── Alerts: rounded, no harsh border ── */
+html body .alert{border-radius:14px;border:0;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+
+/* ── Tabs: modern underline style ── */
+html body .nav-tabs .nav-link{border-radius:10px 10px 0 0;font-weight:600;transition:all .2s;padding:.65rem 1.2rem}
+html body .nav-tabs .nav-link.active{box-shadow:0 -2px 0 0 var(--tblr-primary) inset}
+html body .nav-pills .nav-link{border-radius:10px}
+
+/* ── Avatars ── */
+html body .avatar{border-radius:12px}
+html body .avatar-rounded,.avatar-circle{border-radius:50%}
+
+/* ── Progress bars ── */
+html body .progress{border-radius:100rem;height:.5rem;overflow:hidden}
+html body .progress-bar{border-radius:100rem}
+
+/* ── Pagination ── */
+html body .page-item .page-link{border-radius:10px;margin:0 2px;transition:all .15s}
+html body .page-item.active .page-link{box-shadow:0 2px 6px rgba(var(--tblr-primary-rgb),.3)}
+
+/* ── Toast ── */
+html body .toast{border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,.1)}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:#c4cdd8;border-radius:100rem}
+::-webkit-scrollbar-thumb:hover{background:#94a3b8}
+
+/* ── Selection color ── */
+::selection{background:rgba(var(--tblr-primary-rgb),.15);color:inherit}
+
